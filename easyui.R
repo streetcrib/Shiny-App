@@ -7,16 +7,16 @@ library(DT)
 
 ui <- fluidPage(
     
-    # App title ----
-    titlePanel("Gapminder Data Visualization using Shiny and Plotly"),
+    # This is the application header, it's easy.
+    titlePanel("Easy Visulizetion through plot-ly and making easier applications"),
     
-    # Sidebar layout with input and output definitions ----
+    # This is for the laying out the side-bars and other important stuff
     sidebarLayout(
         
-        # Sidebar panel for inputs ----
+        # Using side-bars in order to built panils.
         sidebarPanel(
             
-            # Input: Select the random distribution type ----
+            # Using easier options and other things
             textInput("title", "Title", "GDP vs life exp"),
             numericInput("size", "Point size", 1, 1),
             checkboxInput("fit", "Add line of best fit", FALSE),
@@ -34,10 +34,10 @@ ui <- fluidPage(
             
         ),
         
-        # Main panel for displaying outputs ----
+        # This is the outline that one can use
         mainPanel(
             
-            # Output: Tabset w/ plot, summary, and table ----
+            # The final outcome using various features and stuff
             tabsetPanel(type = "tabs",
                         
                         tabPanel("Plot", withLoader(plotlyOutput("plot")) ),
