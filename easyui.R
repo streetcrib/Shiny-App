@@ -42,7 +42,7 @@ ui <- fluidPage(
                         
                         tabPanel("Plot", withLoader(plotlyOutput("plot")) ),
                         tabPanel("Table", withLoader(DT::dataTableOutput("table")))
-                        
+                 
                         
             )
             
