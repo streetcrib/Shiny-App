@@ -38,7 +38,7 @@ ui <- fluidPage(
         mainPanel(
             
             # The final outcome using various features and stuff
-            tabsetPanel(type = "finals",
+            tabsetPanel(type = "pills",
                         
                         tabPanel("Plottingmax", withLoader(plotlyOutput("plottingmax")) ),
                         tabPanel("Tabulature", withLoader(DT::dataTableOutput("tabulature")))
