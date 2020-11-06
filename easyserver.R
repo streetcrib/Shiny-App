@@ -5,6 +5,8 @@ library(gapminder)
 library(shinycustomloader)
 library(DT)
 
+
+
 server <- function(input, output) {
     filtered_data <- reactive({
         data <- gapminder
@@ -34,6 +36,7 @@ server <- function(input, output) {
             write.csv(filtered_data(), file)
         }
     )
+    
     
     
     output$plot <- renderPlotly({
